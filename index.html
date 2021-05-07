@@ -9,6 +9,7 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/styles.scss" rel="stylesheet" />
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -35,67 +36,55 @@
         <!-- Home -->
         <header>
             <div class="container text-center">
+                <img class="mb-5 masthead-avatar" src="assets/masthead-avatar.png" alt="Bri & Nery" />
                 <h1>Briana & Nery</h1>
-                <p class="lead">Save The Date</p>
+                <div class="divider-custom mb-3 mt-2">
+                  <div class="divider-custom-line"></div>
+                </div>
+                <h4>April 16th, 2022</h4>
+                <h4>Cabo San Lucas, México</h4>
+                <div id="countdown" class="row text-center">
+                  <div class="countdown-unit mr-4"><span id="days"></span>Days</div>
+                  <div class="countdown-unit mr-4"><span id="hours"></span>Hours</div>
+                  <div class="countdown-unit mr-4"><span id="minutes"></span>Minutes</div>
+                  <div class="countdown-unit"><span id="seconds"></span>Seconds</div>
+                </div>
             </div>
         </header>
         <!-- Itinerary-->
         <section id="itinerary">
-          <div class="mb-5 text-center">
+          <div>
               <h1>Itinerary</h1>
           </div>
-          <div class="container">
-                <div class="timeline">
-                  <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
-                    <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-                      <h3 class=" text-light">Ceremony</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, eaque amet deleniti hic quas qui cumque delectus aliquid, eius quia quod, quae, aliquam aspernatur facilis. Minima quod corporis dignissimos porro.</p>
-                    </div>
-                    <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-                      <img src="img/img13.png" class="img-fluid" alt="img">
-                    </div>
-                    <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-                      <time>Friday, April 15, 2022</time>
-                    </div>
-                  </div>
-                  <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
-                    <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-                      <h3 class=" text-light">Reception</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, eaque amet deleniti hic quas qui cumque delectus aliquid, eius quia quod, quae, aliquam aspernatur facilis. Minima quod corporis dignissimos porro.</p>
-                    </div>
-                    <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-                      <img src="img/img13.png" class="img-fluid" alt="img">
-                    </div>
-                    <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-                      <time>Saturday, April 16, 2022</time>
-                    </div>
-                  </div>
-                  <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
-                    <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-                      <h3 class=" text-light">Timeline Heading</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, eaque amet deleniti hic quas qui cumque delectus aliquid, eius quia quod, quae, aliquam aspernatur facilis. Minima quod corporis dignissimos porro.</p>
-                    </div>
-                    <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-                      <img src="img/img13.png" class="img-fluid" alt="img">
-                    </div>
-                    <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-                      <time>2018-02-23</time>
-                    </div>
-                  </div>
-                  <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
-                    <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-                      <h3 class=" text-light">Timeline Heading</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, eaque amet deleniti hic quas qui cumque delectus aliquid, eius quia quod, quae, aliquam aspernatur facilis. Minima quod corporis dignissimos porro.</p>
-                    </div>
-                    <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-                      <img src="img/img13.png" class="img-fluid" alt="img">
-                    </div>
-                    <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-                      <time>2018-02-23</time>
-                    </div>
-                  </div>
-                </div>
+          <ul class="timeline">
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">Friday, April 15th, 2022</p>
+                <h4>Dinner</h4>
+                <h6>6:00pm - 8:00pm</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla facilisi morbi tempus iaculis urna id.</p>
+                <h4>Bonfire on the Beach</h4>
+                <h6>8:00pm - 10:00pm</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla facilisi morbi tempus iaculis urna id.</p>
               </div>
+            </li>
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">Saturday, April 16th, 2022</p>
+                <h4>Ceremony</h4>
+                <h6>3:00pm - 3:45pm</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla facilisi morbi tempus iaculis urna id.</p>
+                <h4>Cocktails</h4>
+                <h6>5:00pm - 6:00pm</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla facilisi morbi tempus iaculis urna id.</p>
+                <h4>Reception</h4>
+                <h6>6:00pm - 12:00am</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla facilisi morbi tempus iaculis urna id.</p>
+              </div>
+            </li>
+          </ul>
         </section>
         <!-- Travel Information-->
         <section class="bg-light" id="travel">
@@ -104,8 +93,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
-                        <h2>Important</h2>
-                        <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
+                      <h2>Important</h2>
+                      <ul>
+                        <li>
+                          Every person traveling will need a valid passport. If you do not have a passport, you should apply for one ASAP as the process can take months. Find more information
+                          <a class= "passport" href="https://travel.state.gov/content/passports/en/passports/apply.html">here.</a>
+                        </li>
+                        <li>
+                          Your passport should not expire within 6 months AFTER travel! Even though your passport may be valid, the airline can deny you boarding if your passport expires within 6 months AFTER travel. Do not risk it, renew if you are due!
+                        </li>
+                      </ul>
                     </div>
                 </div>
             </div>
@@ -114,34 +111,72 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
-                        <h2>Flight</h2>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+                        <h2>Hotel & Flight</h2>
+                        <p>Please review the document below for information on booking your hotel room and airfare. If you plan on booking your airfare on your own please BLAH BLAH BLAH BLAH.</p>
                     </div>
-                    <div class="col-lg-8 mx-auto">
-                        <h2>Hotel</h2>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+                    <div class="text-center">
+                      <embed src="assets/Granillo2022_booking_flyer.pdf" width="800" height="1100" />
                     </div>
-                </div>
-            </div>
-            <!-- Transportation-->
-            <div class="container">
-                <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <h2>Transportation</h2>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+                        <p>Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur edfdx. Find more information
+                        <a class= "passport" href="">here.</a></p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Things To Do-->
         <section id="things">
-            <div class="container">
+          <div>
+              <h1>Things To Do</h1>
+              <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <h2>Things To Do</h2>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+                  <!-- 1 -->
+                  <div class="col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                      <img src="assets/1.png" class="card-img-top" alt="...">
+                      <div class="card-body text-center">
+                        <h4 class="card-title mb-0">Golf</h4>
+                        <div class="card-text">Nulla facilisi morbi tempus iaculis urna id. Nulla facilisi morbi tempus iaculis urna id.</div>
+                        <a href="" class="btn btn-outline-* btn-sm mt-2" role="button" aria-pressed="true">More Info</a>
+                      </div>
                     </div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                      <img src="assets/2.png" class="card-img-top" alt="...">
+                      <div class="card-body text-center">
+                        <h4 class="card-title mb-0">Excursions</h4>
+                        <div class="card-text">Nulla facilisi morbi tempus iaculis urna id. Nulla facilisi morbi tempus iaculis urna id.</div>
+                        <a href="" class="btn btn-outline-* btn-sm mt-2" role="button" aria-pressed="true">More Info</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 3 -->
+                  <div class="col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                      <img src="assets/3.png" class="card-img-top" alt="...">
+                      <div class="card-body text-center">
+                        <h4 class="card-title mb-0">Resort Activities</h4>
+                        <div class="card-text">Nulla facilisi morbi tempus iaculis urna id. Nulla facilisi morbi tempus iaculis urna id.</div>
+                        <a href="" class="btn btn-outline-* btn-sm mt-2" role="button" aria-pressed="true">More Info</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 4 -->
+                  <div class="col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                      <img src="assets/4.png" class="card-img-top" alt="...">
+                      <div class="card-body text-center">
+                        <h4 class="card-title mb-0">Spa</h4>
+                        <div class="card-text">Nulla facilisi morbi tempus iaculis urna id. Nulla facilisi morbi tempus iaculis urna id.</div>
+                        <a href="" class="btn btn-outline-* btn-sm mt-2" role="button" aria-pressed="true">More Info</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
         </section>
         <!-- FAQs-->
@@ -149,8 +184,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
-                        <h2>Frequently Asked Questions</h2>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+                        <h1>Frequently Asked Questions</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
                     </div>
                 </div>
             </div>
