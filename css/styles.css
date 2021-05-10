@@ -10241,11 +10241,17 @@ section {
 }
 
 .passport {
-  color: #FEA79A;
+  color: #FB7760;
   font-weight: bold;
 }
 
 .passport:hover {
   color: #95B1A0;
   font-weight: bolder;
+}
+
+.pdf {
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
