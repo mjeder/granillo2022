@@ -10227,7 +10227,7 @@ section {
   font-family: 'Playfair Display', serif;
 }
 
-.btn {
+.booking {
   color: white;
   border-color: #FEA79A;
   background-color: #FEA79A;
@@ -10235,22 +10235,24 @@ section {
   font-size: 1.75rem;
 }
 
-.btn:hover {
+.booking:hover {
   background-color: #FEEFEC;
   border-color: #FEA79A;
   color: #FEA79A;
 }
 
-.btn-info {
-  color: #FEA79A;
+.things-info {
+  color: white;
   border-color: #FEA79A;
+  background-color: #FEA79A;
   font-family: 'Playfair Display', serif;
+  font-size: 1.0rem;
 }
 
-.btn-info:hover {
-  background-color: #FEA79A;
+.things-info:hover {
+  background-color: #FEEFEC;
   border-color: #FEA79A;
-  color: #FFFFFF;
+  color: #FEA79A;
 }
 
 .passport {
