@@ -10228,12 +10228,26 @@ section {
 }
 
 .btn {
+  color: white;
+  border-color: #FEA79A;
+  background-color: #FEA79A;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.75rem;
+}
+
+.btn:hover {
+  background-color: #FEEFEC;
+  border-color: #FEA79A;
+  color: #FEA79A;
+}
+
+.btn-info {
   color: #FEA79A;
   border-color: #FEA79A;
   font-family: 'Playfair Display', serif;
 }
 
-.btn:hover {
+.btn-info:hover {
   background-color: #FEA79A;
   border-color: #FEA79A;
   color: #FFFFFF;
