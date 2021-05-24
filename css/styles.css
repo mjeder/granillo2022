@@ -10296,3 +10296,7 @@ b {
 .headlink:hover {
   color: #FB7760;
 }
+
+.navbar-brand {
+  font-size: 36px;
+}
