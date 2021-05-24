@@ -10246,7 +10246,7 @@ section {
   border-color: #FEA79A;
   background-color: #FEA79A;
   font-family: 'Playfair Display', serif;
-  font-size: 1.0rem;
+  font-size: 1.0rem !important;
 }
 
 .things-info:hover {
