@@ -10233,34 +10233,34 @@ section {
 
 .booking {
   color: white;
-  border-color: #FEA79A;
-  background-color: #FEA79A;
+  border-color: #AFD4B7;
+  background-color: #AFD4B7;
   font-family: 'Dancing Script', cursive;
   font-size: 1.75rem !important;
 }
 
 .booking:hover {
-  background-color: #FEEFEC;
-  border-color: #FEA79A;
-  color: #FEA79A;
+  background-color: #E8EFE6;
+  border-color: #AFD4B7;
+  color: #AFD4B7;
 }
 
 .things-info {
   color: white;
-  border-color: #FEA79A;
-  background-color: #FEA79A;
+  border-color: #AFD4B7;
+  background-color: #AFD4B7;
   font-family: 'Playfair Display', serif;
   font-size: 1.0rem !important;
 }
 
 .things-info:hover {
-  background-color: #FEEFEC;
-  border-color: #FEA79A;
-  color: #FEA79A;
+  background-color: #E8EFE6;
+  border-color: #AFD4B7;
+  color: #AFD4B7;
 }
 
 .passport {
-  color: #FB7760;
+  color: #7AB886;
   font-weight: bold;
 }
 
@@ -10290,7 +10290,7 @@ section {
 }
 
 b {
-  color: #FB7760;
+  color: #7AB886;
   font-family: 'Dancing Script', cursive;
 }
 
