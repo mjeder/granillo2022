@@ -10223,7 +10223,7 @@ section {
 
 .card-text {
   color: black;
-  font-size: 1rem;
+  font-size: 1rem !important;
   font-family: 'Playfair Display', serif;
 }
 
@@ -10232,7 +10232,7 @@ section {
   border-color: #FEA79A;
   background-color: #FEA79A;
   font-family: 'Dancing Script', cursive;
-  font-size: 1.75rem;
+  font-size: 1.75rem !important;
 }
 
 .booking:hover {
