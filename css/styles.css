@@ -406,12 +406,10 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: 1.75rem;
-  text-align: center
 }
 
 h4, .h4 {
   font-size: 1.5rem;
-  text-align: center
 }
 
 h5, .h5 {
@@ -880,6 +878,10 @@ pre code {
   .row-cols-sm-6 > * {
     flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
+  }
+
+  .sign {
+    text-align: center
   }
 
   .col-sm-auto {
